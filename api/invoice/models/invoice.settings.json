@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "invoices",
+  "info": {
+    "name": "Invoice"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "quote": {
+      "model": "quotes"
+    },
+    "invoice_number": {
+      "type": "string"
+    },
+    "discount": {
+      "type": "float"
+    },
+    "grand_total": {
+      "type": "float"
+    }
+  }
+}
